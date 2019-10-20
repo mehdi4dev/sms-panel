@@ -6,33 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SMS panel</title>
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
             <nav class="navbar">
-                <!-- <div class="main-logo">
-                    <img src="./asset/jpg/1533276535.png" alt="">
-                </div> -->
+                
                 <ul class="main-nav">
                     <li class="main-logo">
                         <img src="./asset/jpg/1533276535.png" alt="">
                     </li>
-                    <li><a href="#">ورود</a> </li>
-                    <li><a href="#">ثبت نام</a></li>
+                    <li onclick="location.href='#'"><span>ورود</span> </li>
+                    <li onclick="location.href='#'"><span>ثبت نام</span></li>
                 </ul> 
             </nav>
     </header>
-    <main>
-        <div class="first-body-container">
-            <div class="split-2 fbc-left">
-                <img src="./asset/jpg/android-messages-on-pc.jpg" alt="">
-            </div>
-            <div class="split-2 fbc-right">
-                <h1>سرویسی برای توسعه دهندگان</h1>
-                <p>کاوه نگار با ارائه وب‌سرویس پیامک و تماس صوتی پیشرفته برای توسعه دهندگان ،امکان ارسال و دریافت پیامک و برقراری تماس اینترنتی را در اغلب سرویس های نرم افزاری مهیا می کند.</p>
-            </div>
-        </div>
-    </main>
     
+        <section id="first-body-container">
+            <div class="flex-container">
+                <div class="left">
+                    <img src="./asset/jpg/android-messages-on-pc.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h1>سرویسی برای توسعه دهندگان</h1>
+                    <p>کاوه نگار با ارائه وب‌سرویس پیامک و تماس صوتی پیشرفته برای توسعه دهندگان ،امکان ارسال و دریافت پیامک و برقراری تماس اینترنتی را در اغلب سرویس های نرم افزاری مهیا می کند.</p>
+                </div>
+            </div>
+            
+        </section>
+        <section id="second-body-container">
+            <div class="container">
+                <div class="img-start">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo assumenda, possimus ab praesentium enim, officia, cupiditate molestias saepe magnam consequuntur tempora amet vero. Consequatur fuga blanditiis eligendi vel consequuntur non.</p>
+                    <button class="btn btn-start" type="submit" onclick="location.href='#'">شروع کنید</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="flex-container">
+                    <div class="left">
+                        <span>Created by <strong>Mehdi Hassannia</strong> </span>
+                    </div>
+                    <div class="right">
+                        <ul >
+                            <li>
+                                    
+                                <i class="fa fa-instagram" onmouseover="popupFunction(1)  " onmouseout="removeFunction()">
+                                        <span class="popuptext" id="myPopup1">Mehdi.4.hasannia</span>
+                                </i>
+                            </li>
+                            <li>
+                                <i class="fa fa-telegram" onmouseover="popupFunction(2)" onmouseout="removeFunction()">
+                                    <span class="popuptext" id="myPopup2">Telegram</span>
+                                </i>
+                                </li>
+                            <li>
+                                <i class="fa fa-linkedin" onmouseover="popupFunction(3)" onmouseout="removeFunction()">
+                                        <span class="popuptext" id="myPopup3">Linkdin</span>
+                                </i>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            
+        </footer>
+        <script src="./asset/js/index.js"> </script>
+    <!-- <script>
+
+
+        ////////////////////////////
+        ///////   popup
+        /////////////////////////////
+
+        popupFunction =(number)=>{
+            if(number===1){
+                document.getElementById("myPopup1").classList.add("show");
+            }else if(number===2){
+                document.getElementById("myPopup2").classList.toggle("show");
+            }else{
+                document.getElementById("myPopup3").classList.toggle("show");
+            }   
+        }
+        removeFunction=()=>{
+            document.getElementById("myPopup1").classList.remove("show");
+            document.getElementById("myPopup2").classList.remove("show");
+            document.getElementById("myPopup3").classList.remove("show");
+        }
+    </script> -->
 </body>
 </html>
