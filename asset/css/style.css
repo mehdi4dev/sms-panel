@@ -44,6 +44,7 @@ li.main-logo{
 /* /////////////////////////////////////////// */
                 /* 'public' */
 /* //////////////////////////////////////////// */
+h1,h2,h3,h4,h5,h6{margin:0;}
 .flex-container{  
     width: 100%;
     display: flex;
@@ -209,4 +210,45 @@ footer ul li{
 #group-sending{
     background-color:#ddd;
 }
+.sending-form{
+    padding:10px;
+    width: 60%;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+}
+ .sending-header{
+    margin:20px auto 0;
+    border-bottom:inset 2px #f00;
+}
+form{
+    margin:0 auto;
+    flex-direction:column;
+    border:inset 2px #000;
+}
+.sending-body{
+    margin:20px auto 0;
+    width:100%;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+}
+.sender,
+.date,
+.reciver,
+.message-text{
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+}
+/* habibi */
+.sender label,
+.date label,
+.reciver label{
+    margin-bottom: 20px;
+}
 
+.sending-end{
+    margin:0 auto ; 
+    border:inset 2px #000;
+}

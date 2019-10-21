@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single sending</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <header>
+                <nav class="navbar">
+                    
+                    <ul class="main-nav">
+                        <li class="main-logo" onmouseover="profileShow()" onmouseout="profileHidden()">
+                            <img class="user-profile" src="./asset/jpg/user.profile.png" alt=""  >
+                           
+                        </li>
+                        <li onclick="location.href='#'"><span>ارسال پیام</span> </li>
+                        <li onclick="location.href='#'"><span>مدیریت گروه</span></li>
+                    </ul> 
+                    <div id="nav-container" onmouseover="profileShow() " onmouseout="profileHidden()">
+                            <div><i class="fa fa-cog"></i><a href="#">تنظیمات</a></div>
+                            <div><i class="fa fa-sign-out"></i><a href="#"> خروج</a></div>
+                            
+                    </div>
+                </nav>
+                
+        </header>
+
+            <div class="sending-form sending-header">
+                    <h3 class="">ارسال تکی</h3>
+                    <button class="btn">راهنما</button>
+            </div>
+        <form action="" class="sending-form">
+            <div class="sending-body">
+                <div class="sender">
+                        <label for="">ارسال کننده</label>
+                        <select name="" id="">
+                        </select>
+                </div>
+                <div class="date">
+                    <label for="">تاریخ ارسال</label>
+                    <div >
+                        <input type="radio" name="now" value="now" checked>هم اکنون
+                        <input type="radio" name="select-date" value="select-date"> تاریخ مشخص
+                    </div>
+                </div>
+            </div>
+            <div class="sending-body"> 
+                <div class="reciver">
+                    <label for="">دریافت کننده</label>
+                    <textarea name="" id="" cols="15" rows="1"></textarea>
+                </div>
+                <div class="message-text">
+                    <label for="">متن</label>
+                    <textarea name="" id="" cols="60" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="sending-form sending-end">
+            <button class="btn">پیش نویس ها</button>
+            <button class="btn">ارسال</button>
+        </div>
+    <script src="./asset/js/index.js"></script>    
+</body>
+</html>
