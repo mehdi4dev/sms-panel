@@ -35,7 +35,8 @@ li.main-logo{
     height:auto;
     overflow:hidden;
 }
-.main-logo img.user-profile{
+.main-logo img.user-profile,
+#setting-form img{
     width: 65px;
     background-color: #273;
     border-radius: 50%;
@@ -109,7 +110,7 @@ h1,h2,h3,h4,h5,h6{margin:0;}
 #first-body-container{
     width: 100%;
     height: 300px;
-    margin-bottom:100px;
+    /* margin-bottom:100px; */
 }
 #first-body-container .left{
     text-align: center;
@@ -349,6 +350,7 @@ form{
 /* //////////////////////////////////////////// */
 #login,
 #signup,
+#setting,
 #manage-group{
     background-image: url(../jpg/login.jpg);
     height: 100vh;
@@ -360,9 +362,10 @@ form{
     justify-content: center;
 }
 #login-form,
-#signup-form{
+#signup-form,
+#setting-form{
     width: 40%;
-    height:50%;
+    height:60%;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -439,4 +442,17 @@ form{
 }
 #add-group input{
     margin:10px 30px;
+}
+/* /////////////////////////////////////////// */
+                /* 'setting' */
+/* //////////////////////////////////////////// */
+.setting-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.btn-setting{
+    width: auto;
+    height: 50%;
+    margin:20px 10px;
 }

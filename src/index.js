@@ -11,17 +11,19 @@ import Signup from './component/signup';
 import Login from './component/login';
 import groupSending from './component/group';
 import groupManagement from './component/groupmanagement';
+import Setting from './component/setting';
 
 const Main=withRouter(({location})=>{
     return(
         <div>
         
         {
-            location.pathname !=='/' && location.pathname !=='/login' && location.pathname !=='/signup' && location.pathname !=='/group/management' &&
+            location.pathname !=='/' && location.pathname !=='/login' && location.pathname !=='/signup' && location.pathname !=='/group/management' && location.pathname !=='/setting' &&
             <Navbar />
         }
         <Route exact path="/" component={Welcome} />
         <Route path="/home" component={Home} />
+        <Route path="/setting" component={Setting} />
         <Route path="/single" component={singleSending} />
         <Route exact path="/group" component={groupSending} />
         <Route path="/group/management" component={groupManagement} />
@@ -29,7 +31,7 @@ const Main=withRouter(({location})=>{
         <Route path="/login" component={Login} />
         
         {
-            location.pathname !=='/login' && location.pathname !=='/signup' && location.pathname !=='/group/management' &&
+            location.pathname !=='/login' && location.pathname !=='/signup' && location.pathname !=='/group/management' && location.pathname !=='/setting' &&
             <Footer />
         }
         </div>

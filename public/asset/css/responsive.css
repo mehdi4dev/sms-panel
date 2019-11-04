@@ -1,0 +1,53 @@
+@media (max-width:1200px){
+    /* ok */
+}
+@media (min-width:992px) and (max-width:1199px){
+    #login-form,
+    #signup-form,
+    #setting-form,
+    #manage-group-form{
+        width: 50%;
+    }
+   
+}
+@media (min-width:768px) and (max-width:991px){
+    #first-body-container{
+        height: 260px;
+    }
+    #first-body-container .right  h1,p{
+        font-size:20px;
+    }
+    #login-form,
+    #signup-form,
+    #setting-form,
+    #manage-group-form{
+        width: 60%;
+    }
+    .message-text textarea{
+        width:300px;
+    }
+}
+@media (max-width:767px){
+    #first-body-container{
+        height: 200px;
+    }
+    #first-body-container .right  h1,p{
+        font-size:15px;
+    }
+    .flex-container .left img{
+        width: 90%;
+        padding:15px;
+    }
+    .flex-container .right{
+        font-size: 20px;
+    }
+    #login-form,
+    #signup-form,
+    #setting-form,
+    #manage-group-form{
+        width: 70%;
+    }
+    .message-text textarea{
+        width:200px;
+    }
+}
