@@ -30,12 +30,12 @@ class singleSending extends React.Component{
   }
   sendMessage=()=>{
     
-//     Axios.post(`${config.apiURL}/sms/send.json?receptor=${this.state.reciver}&message=${this.state.message}&sender=${this.state.sender}`)
-// .then(response=>{
-//       console.log(response);
-//     }).catch(errors=>{
-//       console.log(errors);
-//     })
+  Axios.post(`${config.apiURL}/sms/send.json?receptor=${this.state.reciver}&message=${this.state.message}&sender=${this.state.sender}`)
+.then(response=>{
+      console.log(response);
+    }).catch(errors=>{
+      console.log(errors);
+    })
   }
   render(){
     return(<div>
